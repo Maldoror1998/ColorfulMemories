@@ -1,0 +1,252 @@
+:root {
+    --color0: #FFFFFFE6;
+    --color1: #BCFFFA;
+    --color2: #88FFF6;
+    --color3: #5BFFF3;
+    --color4: #2EFCED;
+    --color5: #FFBCE7;
+    --color6: #FF88D5;
+    --color7: #FF5BC6;
+    --color8: #FD2FB5;
+    --color9: #FFF3BC;
+    --color10: #FFEB88;
+    --color11: #FFE35B;
+    --color12: #FFDB2F; 
+    font-size: 16px;
+}
+
+@font-face {
+    /* importando fonte, aqui no font-family coloca o nome que vai colocar na fonte 
+    geralmente a gente n coloca fonte solto na pasta de arquivos, fazer uma pasta específica e colocar o diretório*/
+    font-family: 'Font';
+    src: url('font.otf') format('opentype');
+}
+
+* {
+    font-family: Font;
+    color: var(--color0);
+    text-shadow: 1px 1px 10px var(--color8);
+    /*Coloquei vários na esperança de funcionar em todos os navegadores*/
+    -webkit-touch-callout: none; 
+    -webkit-user-select: none; 
+    -khtml-user-select: none; 
+    -moz-user-select: none; 
+    -ms-user-select: none; 
+    user-select: none;
+}
+
+h1 {
+    color: var(--color0);
+    text-shadow: 1px 1px 10px var(--color8);
+    text-align: center;
+    font-size: 3rem;
+}
+
+body {
+    background-image: linear-gradient(to bottom, var(--color2), var(--color6));
+    background-attachment: fixed;
+    display: flex;
+
+  
+}
+
+main {
+	background-image: linear-gradient(to bottom, var(--color1), var(--color5));
+    width: 380px;
+    position: relative;
+	margin: auto;
+    border-radius: 10px;
+    /*border: 2px solid var(--color9);*/
+    box-shadow: 1px 1px 10px 1px var(--color9);
+
+  
+}
+
+
+div.colorblock > p {
+    margin: 0px;
+    position: relative;
+    align-items: center;
+    margin: auto;
+}
+
+div > * {
+    vertical-align: bottom;
+}
+
+#count {
+    background-image: linear-gradient(to right, var(--color3), var(--color7), var(--color11));
+    color: var(--color0);
+    display: block;
+    text-align: center;
+    height: 75px;
+    width: 125px;
+    margin: auto;
+    border-radius: 10px;
+    resize: none; 
+    outline: none;
+    font-size: 1.5rem;
+    box-shadow: 1px 1px 10px 1px var(--color9);
+}
+
+#startbutton {
+    background-color: var(--color12);
+    width: 115px;
+    border-radius: 10px;
+    margin: auto;
+    margin-top: 5px;
+    margin-bottom: 35px;
+    text-align: center;
+}
+
+#startbutton:hover {
+    background-color: var(--color11);
+
+    
+}
+
+
+
+.colorblock {
+    height: 115px;
+    width: 115px;
+    margin: 5px 0px 5px 5px;
+    outline: 10px solid transparent;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 1rem;
+    display: inline-block
+
+
+}
+
+.colorblock:active {
+    outline-color: rgb(0, 255, 13);
+}
+
+#red {
+    background-color: red;
+
+}
+
+#red:hover {
+    background-image: radial-gradient(circle at center , var(--color0), red);
+}
+
+#blue {
+    background-color: blue;
+}
+
+#blue:hover {
+    background-image: radial-gradient(circle at center , var(--color0), blue);
+}
+
+#yellow {
+    background-color: yellow;
+}
+
+#yellow:hover {
+    background-image: radial-gradient(circle at center , var(--color0), yellow);
+}
+
+#purple {
+    background-color: purple;
+}
+
+#purple:hover {
+    background-image: radial-gradient(circle at center , var(--color0), purple);
+}
+
+#green {
+    background-color: green;
+}
+
+#green:hover {
+    background-image: radial-gradient(circle at center , var(--color0), green);
+}
+
+#orange {
+    background-color: orange;
+}
+
+#orange:hover {
+    background-image: radial-gradient(circle at center , var(--color0), orange);
+}
+
+aside {
+    height: 100px;
+    width: 100px;
+    border: 2px solid black;
+    border-radius: 10px;
+    position: relative;
+    font-size: 1rem;
+    margin: 0 auto;
+
+
+   
+}
+
+@media (max-width:1024px){
+
+    main {
+        width: 380px;
+    }
+}
+
+@media (max-width:768px){
+
+    :root {
+        font-size: 12px;
+    }
+
+    main {
+        width: 320px;
+    }
+}
+
+@media (max-width:425px){
+
+    :root {
+        font-size: 10px;
+    }
+
+    main {
+        width: 260px;
+    }
+}
+
+@media (max-width:375px){
+
+    :root {
+        font-size: 8px;
+    }
+
+    main {
+        width: 200px;
+    }
+
+    .colorblock, aside {
+        height: 55px;
+        width: 55px;
+    }
+
+
+}
+
+@media (max-width:320px){
+
+    :root {
+        font-size: 8px;
+    }
+
+    main {
+        width: 180px;
+    }
+
+    .colorblock, aside {
+        height: 50px;
+        width: 50px;
+    }
+
+}
+

@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="responsividade.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <!--UNIDADES DE MEDIDA DO CSS
+    
+        LINK: https://www.youtube.com/watch?v=H91DhKPjhPk&list=PL85ITvJ7FLogMzb2s6K5wKpQK2nL76vUK&index=6&ab_channel=Rocketseat
+
+        plugin live server -olhar dps
+
+        Layout fixo
+            px 
+
+        Layout fluído
+            % 
+            auto
+            vh - viewport height 
+            vw - viewport width
+
+        width; 100%
+        max-width: o máximo/mínimo que vai encolher
+
+        Textos fixos
+        1px = 0.75pt (pontos do Word)
+        16px = 12pt
+
+        Textos fluídos
+        em - multiplicado pelo pai (referencia um container que ele está dentro -> pode fazer várias multiplicações em várias camadas)
+        rem - multiplicado pelo root (o principal, no caso o body, mas se colocar o root provavelmente multiplica por ele)
+
+        Colocar um valor padrão na root/body e ir mudando as proporções no texto em relação ao padrão
+
+        Se n tiver o olho treinado vai nos breakpoints
+
+        PAROU EM 31MIN
+
+        MEDIA QUERIES!!!!
+
+        OS MEDIAS QUERIES TEM QUE ESTAR EM ORDEM DE TAMANHO!!!
+
+        media queries + breakpoints
+
+        @media (max-width: 768px;) {
+            html {
+                font-size: 50%;
+            }
+        }
+
+        Dica: como alterar os grids s/ media queries
+
+        Primeira ideia seria colocar colunas flexiveis, porem se diminuir mto o negocio começa a ficar comprido
+
+        primeiramente trocar por repeat
+
+        grid-template-columns: repeat(3, minmax(250px, 1fr));
+
+        N ficou mais comprido, mas continua 3 colunas -> trocar o numero de colunas por auto-fit
+
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+
+
+        A imagem agr que ficou zoada, usar o media querie
+
+        @media (max-width: 630px) {
+            .container (o que vai ser mudado() {
+                flex-direction: column; -> mudou pra baixo ao invés de lado ()
+                Tem outras coisas, mas acho que n seria importante pra mim agr
+            }
+
+            .form-group {
+                display: block;
+            }
+        }
+
+        MENU HAMBURGUER (tres barrinhas que abre grande)
+
+        @media (max-width: 540px){
+            nav {
+                display: none;
+            }
+
+            #vai ter um menu toogle escondido no html que vai aparecer nesse width
+
+
+            Um monte de putaria de transição que começa +/- em 45min, não entendi porra nenhuma e nem pretendo usar agr. 
+        }
+
+
+        overflow: hidden (esconde a barra de rolagem. "initial" mostra de volta)
+
+        Parou em 1:05min
+
+        Varios atributos, olhar na documentação
+        @media (max-width) and (min-width)
+
+
+        Fazer configuração para impressora
+
+        <link rel="stylesheet" href="print.css" media="print"> Dá pra fazer no @media tbm provavelmente
+
+        IMAGENS
+
+            sources
+
+        GRIDBOX!!!
+
+        Link: https://www.youtube.com/watch?v=HN1UjzRSdBk&ab_channel=Rocketseat
+
+        Grid: duas dimensões
+        Flexbox: Uma dimensão (linha ou coluna)
+        -> Um complementa o trab do outro
+
+        Quais navegadores ainda não aceitam grid? (?)
+
+        CONTAINER E ITEMS
+
+        Container:
+
+        display: grid;
+        grid-template-columns: nº de colunas
+        grid-template-rows: nº de linhas
+        grid-gap: espaço entre linhas e colunas
+            grid-row-gap:
+            grid-column-gap: 
+        grid-template-areas:Delimitar areas (?)
+
+        Item:
+
+        grid-column: onde fica o item
+            - grid-column-start
+            - grid-column-end
+        grid-row
+            - grid-row-start
+            - grid-row-end
+        grid-row
+
+        PAROU EM 15MIN
+
+        grid-template-ares: "h h
+                            m a
+                            f f"
+
+        Pode colocar . onde quiser espaço vazio
+        Daí nos {} coloca a letra ou nome referencia
+
+        Ex:
+        header {
+            grid-area: h;
+        }
+        main {
+            grid-area:  m;
+        }
+
+        ALINHAMENTO
+
+        justify =
+        align = 
+        content = alinha o grid em relação ao espaço total (raro de usar)
+
+        items = Alinha a própria celula dentro do seu espaço (?)
+        self = Mesma coisa que o items, mas é aplicado diretamente no item do container (?????)
+
+    -->
+
+    <div class="container">
+        <header></header>
+
+        <main></main>
+
+        <aside>
+        </aside>
+
+        <footer></footer>
+    </div>
+
+
+</body>
+</html>
