@@ -65,10 +65,12 @@ main {
 
 div.colorblock > p {
     margin: 0px;
-    position: relative;
-    align-items: center;
-    margin: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
 }
+
 
 div > * {
     vertical-align: bottom;
@@ -87,6 +89,7 @@ div > * {
     outline: none;
     font-size: 1.5rem;
     box-shadow: 1px 1px 10px 1px var(--color9);
+    position: relative;
 }
 
 #startbutton {
@@ -95,7 +98,7 @@ div > * {
     border-radius: 10px;
     margin: auto;
     margin-top: 5px;
-    margin-bottom: 35px;
+    margin-bottom: 15px;
     text-align: center;
 }
 
@@ -115,7 +118,8 @@ div > * {
     border-radius: 10px;
     text-align: center;
     font-size: 1rem;
-    display: inline-block
+    display: inline-block;
+    position: relative;
 
 
 }
